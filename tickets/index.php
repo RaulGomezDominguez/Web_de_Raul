@@ -14,30 +14,30 @@
 <body>
     <header>
     <!-- place navbar here -->
-    <?php include './includes/header.php'?>
+    <?php include './includes/header_admin.php'?>
     
     </header>
     <main>
         <div class="container">
             <div class="row justify-content-center align-items-center g-2">
                 <div class="cal-12 col-sm-12 col-md-8 mt-6">
-                    <h1><b>Esto es un sistema de Tickets</b> </h1>
-                    <p>Un sistema de <b>tickets</b>es una herramienta esencial que debe tener todo 
-                        service desk para que sea eficiente. Si se implementa correctamente, este software 
-                        ayudará a registrar, actualizar, gestionar y resolver incidentes y 
-                        <b>solicitudes de servicio de manera óptima</b>.
+                    <h1>Esto es un sistema de Tickets</h1>
+                    <p>Es un sistema de gestión de <b>tickets</b> de soporte, los clientes y los agentes pueden: <br>   
+                    Esto Realizará un seguimiento del estado general de una solicitud de tickets ya que será una herramienta esencial 
+                    que debe tener todo servicios para que sea eficiente.<br>
                     </p>
+                    
                 </div>
                 <div class="cal-12 col-sm-12 col-md-4 mt-5">
                     <div class="card border-primary">
                     <div class="card-body">  
                         <form action="./auth/login.php" method="post">
                             <div class="form-floating mb-4 ">
-                            <input type="text" class="form-control border-primary" name="email" placeholder="email" required="">
+                            <input type="email" class="form-control border-primary" name="email" placeholder="email" required>
                             <label>Correo electrónico</label>
                             </div>
                             <div class="form-floating mb-4">
-                            <input type="password" class="form-control border-primary" name="contraseña"  placeholder="contraseña" required="">
+                            <input type="password" class="form-control border-primary" name="password"  placeholder="password" required>
                             <label>Contraseña</label> 
                         </div>
                             <button type="submit" class="btn btn-primary">Iniciar sesión</button>
