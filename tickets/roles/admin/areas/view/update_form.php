@@ -1,14 +1,3 @@
-<?php
-//print_r($_GET);
-$id = $_GET['id'];
-
-require("../../../../includes/db.php");
-$query = "SELECT * FROM area WHERE id_area = $id";
-$ejecutar = mysqli_query($connection, $query);
-$fila = mysqli_fetch_array($ejecutar);
-//echo $fila['nombre']; echo $fila['email']; echo $fila['telefono'];
-
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -21,6 +10,17 @@ $fila = mysqli_fetch_array($ejecutar);
 </head>
 <body>
 
+<?php
+//print_r($_GET);
+$id = $_GET['id'];
+
+require("../../../../includes/db.php");
+$query = "SELECT * FROM area WHERE id_area = $id";
+$ejecutar = mysqli_query($connection, $query);
+$fila = mysqli_fetch_array($ejecutar);
+//echo $fila['nombre']; echo $fila['email']; echo $fila['telefono'];
+
+?>
 <div class="container h-100 " style="padding-top: 1rem;" >  
         <div class="row justify-content-center align-item-center h-100">
                 <div class="col-6">
